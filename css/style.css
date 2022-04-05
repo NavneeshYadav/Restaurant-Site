@@ -1,0 +1,261 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS variables */
+:root{
+    --navbar-height:70px;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:relative;
+    /* flex-direction: column; */
+}
+
+#navbar::before {
+    background-color:black;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.65;
+    top: 0px;
+    left:0px;
+
+}
+/* Navigation bar:logo and image */
+#logo{
+    padding: 10px 10px;
+    margin: 0px 20px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+#logo img{
+    width: 80px;
+    height: 80px;
+}
+/* Navigation bar:list ad styling */
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+/* #navbar ul li{
+
+} */
+#navbar ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px 20px;
+    font-size: 25px;
+    color: white;
+    margin:15px 0px; 
+    font-family: 'Roboto', sans-serif;
+}
+#navbar ul li a:hover{
+ background-color: white;
+    color:black;
+    border-radius: 20px;
+}
+/* home section */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    height: 325px;
+    font-family: 'Ubuntu', sans-serif;
+}
+#home::before {
+    background:url(../bg3.jpg)no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 92%;
+    top: 0;
+    left:0;
+    z-index: -1;
+    opacity:0.8 ;    
+}
+
+#home p{
+     text-align: center;
+     font-size: 18px;
+/* font-weight:bold ; */
+font-family: 'Roboto', sans-serif;
+  }
+/* Utility class */
+.heading{
+    font-size: 50px;
+    padding: 15px;
+ 
+}
+.btn{
+    padding: 3px 10px;
+    margin: 25px 10px;
+    border-radius:16px;
+border: none;
+background: none;
+color: white;
+border: 2px solid white;
+font-size: 18px;
+cursor: pointer;
+
+}
+/* services  */
+.services{
+    background-color:#ffe2dd;
+    width: 100%;
+}
+
+.box{
+    display:flex ;
+    justify-content: center; 
+    align-items: center;
+    margin: 0px 5px;  
+}
+.services h1{
+    padding:13px 13px 3px 13px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+.services .icon{
+    width: 80px;
+    height:80px;
+    display:block;
+    margin: 10px auto;
+
+}
+.ser-details{
+    margin:0px 15px 18px 15px;
+    text-align: center;
+
+}
+.ser-details p{
+    font-family: 'Ubuntu', sans-serif;
+}
+.box h3{
+    font-family: 'Roboto', sans-serif;
+}
+/* Appsection */
+.download #Applogo{
+    height:200px;
+    width: 270px;
+    display: inline-block;
+    padding: 5px 88px;
+}
+.download{
+    background-color:#f6e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.download2{
+    text-align: center;
+
+}
+.download h2{
+    font-family: 'Roboto', sans-serif;
+    padding:15px 20px;
+    font-size: 40px;
+}
+.app-details{
+    /* display: flex; */
+}
+.download p{
+    padding: 0px 10px ;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+}
+.download #mobile{
+ 
+width: 265px;
+height: 275px;
+
+}
+/* form  */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+     position: relative;
+    /* background-color:#edeaea; */
+}
+.contact ::before{
+background: url(../contact.jpg)no-repeat center center/cover;
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left:0;
+z-index: -1;
+opacity:0.65; 
+
+}
+.contact h3{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    margin: 20px 10px 3px 10px;
+}
+
+.formgroup{  
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 20px;
+}
+.contact input{
+    width: 400px;
+    height: 30px;
+    padding: 3px;
+}
+.contact textarea{
+    width: 398px;
+    padding: 5px;
+    height: 200px;
+    font-size: 15px;
+}
+.contact button{
+    padding: 5px;
+}
+/* footer */
+footer{
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    color: white;
+    background: black;
+    align-items: center;
+    justify-content:space-around;
+   
+}
+.copyright{
+    font-size: 25px;
+    text-align: center;
+}
+.social{
+    margin: 20px 5px ;
+    font-size: 23px;
+    text-align: center;
+    
+}
+footer img{
+    display: inline-block;
+    margin: 7px 4px;
+    filter: invert(100%);
+    width: 30px;
+    height: 30px;
+    /* background-color: white; */
+}

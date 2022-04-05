@@ -1,0 +1,72 @@
+/* navigation */
+#navbar{
+flex-direction: column;
+}
+#navbar ul li a{
+    margin: 2px 3px;
+    font-size: 14px;
+    text-align: center;
+}
+/* Home */
+#home{
+flex-direction: column;
+margin:-25px -150px;
+}
+#home::before{
+    height: 579px;
+}
+.heading{
+  
+ font-size: 30px;
+}
+#home p{
+  font-size: 15px;
+  margin: 0px 3px;
+}
+.btn{
+    font-size: 14px;;
+}
+/* services */
+.services{
+
+}
+.services .box{
+    flex-direction: column;
+}
+/* app  */
+.download{
+    flex-direction: column;
+
+}
+.download p{
+    font-size: 17px;
+    margin: 0px 35px;
+}
+.download #mobile{
+    margin:30px -22px 30px 30px;
+}
+/* contact */
+.contact{
+    flex-direction: column;
+    text-align: center;
+    
+}
+.contact input{
+    width: 230px;
+    height: 20px;
+}
+.contact textarea{
+    width: 228px;
+    height: 100px;
+}
+/* footer  */
+footer{
+  flex-direction: column; 
+}
+.copyright{
+    font-size: 15px;
+    margin: 10px auto;
+}
+.social{
+    visibility: hidden;
+}
