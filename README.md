@@ -1,2 +1,2 @@
 # Restaurant-Site
-website link :- https://navneeshyadav1.github.io/Restaurant-Site/
+website link :- https://navneeshyadav.github.io/Restaurant-Site/
